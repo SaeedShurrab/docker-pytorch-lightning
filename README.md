@@ -17,6 +17,22 @@ In order to run this container you'll need docker installed.
 
 If you want to enable GPU inside the container, you'll need to have a [Nvidia Docker Drivers](https://github.com/NVIDIA/nvidia-docker) installed, [check the installation guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#install-guide) if you're running it on your local machine, otherwise most cloud providers have all the required drivers installed and configured when you start the instance
 
+
+
+To get this image either pull the latest version from [Dockerhub](https://hub.docker.com/r/yazansh/pytorch-lightning)
+
+```shel
+docker pull yazansh/pytorch-lightning
+```
+
+Or clone this repository and build it locally
+
+```shell
+git clone https://github.com/YazanShannak/docker-pytorch-lightning.git
+cd docker-pytorch-lightning
+docker image build -t image-name:latest .
+```
+
 ### Usage
 
 #### Volumes
